@@ -8,8 +8,10 @@
   <script src="scripts.js" defer></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 </head>
-<body>
-  <input type="file" id="csvFileInput" accept=".csv">
+<body><form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
   <button onclick="processCSV()">Process CSV</button>
 </body>
 </html>
