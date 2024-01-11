@@ -1,4 +1,8 @@
 let errorCounter = 1;
+function displayCSVContents(contents) {
+  const csvContentsElement = document.getElementById('csvContents');
+  csvContentsElement.innerHTML = '<pre>' + contents.join('\n') + '</pre>';
+}
 
 function testFloor(times) {
   const cutOffFloor = moment('04:30:00', 'HH:mm:ss');
